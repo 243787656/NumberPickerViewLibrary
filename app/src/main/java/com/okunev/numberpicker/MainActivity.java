@@ -3,6 +3,7 @@ package com.okunev.numberpicker;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.Toast;
 
 import com.okunev.numberpickerview.NumberPickerView;
 
@@ -40,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
                 .withHighLightedColor(Color.MAGENTA)
                 .withElementsTags(tags)
                 .withFooterValues(footerValues)
+                .withOnChosenNumberListener(new NumberPickerView.OnChosenNumberListener() {
+                    @Override
+                    public void OnChosenNumber(Integer selectedNumber) {
+                        Toast.makeText(MainActivity.this, "Number is " + String.valueOf(selectedNumber), Toast.LENGTH_SHORT).show();
+                    }
+                })
                 .build();
     }
 

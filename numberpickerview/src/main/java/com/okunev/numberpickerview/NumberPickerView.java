@@ -395,7 +395,7 @@ public class NumberPickerView extends RelativeLayout {
     }
 
     public interface OnChosenNumberListener {
-        void OnChosenNumber(Integer selectedBet);
+        void OnChosenNumber(Integer selectedNumber);
     }
 
     public NumberPickerView withOnChosenNumberListener(OnChosenNumberListener listener) {
