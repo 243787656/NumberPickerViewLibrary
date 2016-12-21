@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPickerView">
+        <attr name="elements" format="integer" />
+        <attr name="highlightedColor" format="color" />
+        <attr name="defaultColor" format="color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="highlightedTextColor" format="color" />
+        <attr name="defaultTextColor" format="color" />
+        <attr name="headerTextSize" format="float" />
+        <attr name="elementsTextSize" format="float" />
+        <attr name="hasHeader" format="boolean" />
+        <attr name="hasFooter" format="boolean" />
+        <attr name="isMultiselectable" format="boolean"/>
+    </declare-styleable>
+
+</resources>
